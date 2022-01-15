@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_cartas">7dp</dimen>
+    <dimen name="spinner">50dp</dimen>
+    <dimen name="header_size">20sp</dimen>
+    <dimen name="content_size">14sp</dimen>
+    <dimen name="tamano_texto">20sp</dimen>
+</resources>

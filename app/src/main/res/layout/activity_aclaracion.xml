@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRowHeaderInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true">
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Aclaración"
+                    android:textColor="@color/orange_text"
+                    android:textSize="20sp" />
+
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/content_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/contenido_aclaracion1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/contenido_aclaracion2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_size" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_conteo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/titulo_como_contar"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/content_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/como_contar"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+
+
+            </LinearLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_tabla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/fila0_col0"
+                        android:text="@string/titulo_clase_redonda"
+                        android:padding="3dip"/>
+                    <TextView
+
+                        android:id="@+id/fila0_col1"
+                        android:layout_width="100dip"
+                        android:text="@string/contenido_clase_redonda"
+                        android:gravity="left"
+                        android:padding="3dip"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/fila1_col0"
+                        android:text="@string/titulo_clase_alarjada"
+                        android:padding="3dip"/>
+                    <TextView
+                        android:id="@+id/fila1_col1"
+                        android:layout_width="100dip"
+                        android:text="@string/contenido_clase_alarjada"
+                        android:gravity="left"
+                        android:padding="3dip"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/fila2_col0"
+                        android:text="@string/titulo_clase_plana"
+                        android:padding="3dip"/>
+                    <TextView
+                        android:id="@+id/fila2_col1"
+                        android:layout_width="100dip"
+                        android:text="@string/contenido_clase_plana"
+                        android:gravity="left"
+                        android:padding="3dip"/>
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/tabla_amubre" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/tabla_coroma" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/carta_seleccionada"/>
+            <corners android:radius="7dp"/>
+            <stroke android:color="@color/carta_presionada" android:width="3dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/carta_seleccionada"/>
+            <corners android:radius="7dp"/>
+            <stroke android:color="@color/carta_seleccionada" android:width="3dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/carta_seleccionada"/>
+            <corners android:radius="7dp"/>
+            <stroke android:color="@color/carta_seleccionada" android:width="3dp"/>
+        </shape>
+    </item>
+</selector>

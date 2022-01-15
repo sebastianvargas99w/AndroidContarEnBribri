@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Contar en bribri</string>
+    <string name="action_credits">Créditos</string>
+    <string name="action_aclaration">Aclaración</string>
+    <string name="action_help">Ayuda</string>
+    <string name="boton_comer">Comer</string>
+    <string name="boton_ayuda">Botón para abrir instrucciones sobre el juego</string>
+    <string name="boton_volumen">Botón para deshabilitar o habilitar sonidos del juego</string>
+    <string name="boton_salir">Botoón para salir de la pantalla de juego</string>
+
+
+    <!-- Confirmación para cerrar actividad de juego -->
+    <string name="titulo_confirmacion">¿Está seguro que desea terminar la partida?</string>
+    <string name="contenido_confirmacion">Si termina la partida perderá su progreso.</string>
+    <string name="respuesta_positiva">Cerrar</string>
+    <string name="respuesta_negativa">Cancelar</string>
+
+    <string name="maximo_intentos">Intentos: 4/4</string>
+    <string name="primera_carta_de_la_mano">Primera carta de la mano</string>
+    <string name="segunda_carta_de_la_mano">Segunda carta de la mano</string>
+    <string name="tercera_carta_de_la_mano">Tercera carta de la mano</string>
+    <string name="cuarta_carta_de_la_mano">Cuarta carta de la mano</string>
+    <string name="quinta_carta_de_la_mano">Quinta carta de la mano</string>
+    <string name="sexta_carta_de_la_mano">Sexta carta de la mano</string>
+    <string name="setima_carta_de_la_mano">Sétima carta de la mano</string>
+    <string name="boton_modo_uno">Jugar con mazo ordenado</string>
+    <string name="Boton_modo_dos">Jugar con mazo desordenado</string>
+    <string name="Boton_instrucciones">Instrucciones</string>
+
+    <!-- Pagina de ayuda -->
+    <string name="header_instrucciones"> Ver instrucciones del juego </string>
+    <string name="header_imagenes_bribri"> Ver tablas de números en bribri </string>
+    <string name="header_ayuda"> Ayuda con la página de juego </string>
+    <string name="header_instr_general"> Instrucciones generales </string>
+    <string name="header_instr_ordenado"> Modo de juego: Mazo ordenado </string>
+    <string name="header_instr_desordenado"> Modo de juego: Mazo desordenado </string>
+    <string name="content_instr_general">El juego es estrictamente individual y cuenta con 2 modos de juego bien definidos: mazo desordenado y mazo ordenado. El jugador contará con 7 cartas en mano y hay un mazo del cual se pueden comer cartas dependiendo el modo de juego. El objetivo del juego es emparejar cartas (solo en parejas) y las cartas solo se pueden agrupar cuando tienen la misma cantidad de objetos y son de la misma categoría. El jugador ganará al terminar las cartas de la mano.</string>
+    <string name="content_instr_desordenado"> Dentro de las 7 cartas de la mano no está asegurado que todas tengan una carta con la cual pueden agruparse. Por lo tanto, el jugador puede comer cartas del mazo. El “comer” una carta del mazo hace referencia a que el jugador selecciona una carta de su mano por cambiar, y esta será reemplazada por una del mazo (el jugador desconoce cuál carta es la que sacará)</string>
+    <string name="content_instr_ordenado"> Dentro de las 7 cartas de la mano, todas tienen una carta con la cual pueden agruparse. De esta manera, no es necesario que el jugador “coma” cartas del mazo, ya que, una vez que agrupa 2 cartas, el juego le repondrá dos cartas más con las del mazo (una siempre es pareja de alguna carta de la mano).</string>
+    <string name="header_ayuda_"> Modo de juego: Mazo desordenado </string>
+    <string name="ayuda_intro_cartas"> En la pantalla de juego, se encontrarán 7 cartas con las que se puede interactuar de la siguiente forma: </string>
+    <string name="ayuda_intro_iconos"> En la pantalla de juego, al lado superior de la derecha, se encontrarán también los siguientes íconos: </string>
+    <string name="icono_ayuda"> Ícono de ayuda. Proporciona al usuario ayuda de cómo jugar y cómo interactuar con la página de juego. </string>
+    <string name="icono_sonido"> Ícono de sonido. Permite que el usuario active o desactive el sonido en una partida. El ícono se muestra con una raya diagonal cuando el juego está en modo silencio. </string>
+    <string name="icono_salir"> Ícono para salir del juego. Redirige al jugador al menú principal y termina la partida que se está jugando. </string>
+    <string name="icono_comer"> Botón para comer. Requiere que el jugador antes seleccione al menos una carta que será la que se va a reemplazar por una del mazo. </string>
+    <string name="carta_descripcion"> Al tocar la carta se selecciona para emparejar. Para terminar de emparejar se debe tocar otra carta. Si se desea seleccionar una carta para reemplazar con una del mazo, se debe dejar de tocar y mantener el dedo sobre la carta hasta que muestre una animación. </string>
+
+    <!-- Pagina de aclaracion -->
+    <string name="contenido_aclaracion1">Tté shtáwok (que literalmente significa ‘palabras para contar’) se creó como material didáctico lúdico con la finalidad de dinamizar el aprendizaje y la práctica del sistema de clasificación y los números de la lengua bribri.  El juego está compuesto por cincuenta y cuatro tarjetas, en cada una de las cuales se presenta la ilustración de un animal, planta u objeto acompañada de la respectiva palabra en bribri (escrita en sus variantes más comunes en las variedades de Coroma y de Amubre).  Únicamente se incluyen las clases redonda, plana y alargada con referentes concretos. Además, dado que las clases redonda y plana se igualan a partir del número cuatro, se decidió incluir una, dos o hasta tres unidades del objeto o el animal ilustrado. </string>
+    <string name="contenido_aclaracion2">Los objetos, plantas o animales ilustrados fueron seleccionados de acuerdo con el criterio de que remitieran a referentes comúnmente encontrados en la comunidad o a elementos particularmente relevantes para la cultura bribri, algunos de ellos ya en desuso, puesto que no solo se trata de que los jugadores se sientan identificados y orgullosos de su cultura, sino que también de que el juego sirva para aprender vocabulario relativo a objetos quizás poco frecuentes en la actualidad pero considerados importantes cuando se habla de la cultura material bribri.</string>
+    <string name="titulo_como_contar">Sobre la clasificación de los sustantivos y los números en bribri</string>
+    <string name="como_contar">En la lengua bribri, los sustantivos (palabras referidas a seres humanos, seres sobrenaturales, objetos, animales, plantas y conceptos) se clasifican en varias categorías dependiendo de criterios como si el sustantivo se refiere a humanos; a entidades redondas, alargadas o planas; a grupos, etc.  La clasificación del sustantivo se manifiesta en las formas de los números, de modo que se usa un número con una terminación distinta si lo que se cuenta son humanos, entidades alargadas, entidades redondas y así por el estilo.  En este juego, se practica la clasificación en entidades planas, alargadas y redondas: usted debe crear parejas con tarjetas que ilustren dos entidades de la misma categoría y que,  además, sean de la misma cantidad. Por ejemplo, debe emparejar dos tarjetas que muestren la cantidad de tres objetos de la categoría redonda cada una. Si el emparejamiento es correcto, ambas tarjetas desaparecen y se escucha el audio del número correspondiente.  Si el emparejamiento no es correcto, suena un pitido y ambas permanecen.  Solo se incluyen cantidades de uno, dos y tres.
+Para detalles de la clasificación de los sustantivos, se recomienda revisar los siguientes textos: Gramática de la lengua bribri de Carla Jara Murillo, Se’ ttö bribri ie de Carla Jara Murillo y Alí García Segura,  y Curso de básico de bribri de Adolfo Constenla, Feliciano Elizondo y Francisco Pereira.  A modo de ayuda, el siguiente cuadro muestra ejemplos de la clasificación que sirven para este juego:</string>
+    <!-- contenido tabla (aclaración) -->
+    <string name="titulo_clase_redonda">Clase redonda</string>
+    <string name="contenido_clase_redonda">Objetos redondos o esféricos, animales pequeños con cola corta (como los conejos), frutas.</string>
+    <string name="titulo_clase_alarjada">Clase alargada</string>
+    <string name="contenido_clase_alarjada">Objetos alargados, animales con cola larga o con forma alargada.</string>
+    <string name="titulo_clase_plana">Clase plana</string>
+    <string name="contenido_clase_plana">Objetos planos, aves, insectos con alas.</string>
+    <string name="titulo_tablas">Para los números del 1 al 10 en las categorías humana, redonda, plana y alargada, se pueden consultar los siguientes cuadros:</string>
+
+
+    <!--Pagina de creditos -->
+    <string name="encabezado">
+        UNIVERSIDAD DE COSTA RICA \n
+        VICERRECTORÍA DE ACCIÓN SOCIAL \n
+        SECCIÓN DE TRABAJO COMUNAL UNIVERSITARIO \n
+        ESCUELA DE FILOLOGÍA, LINGÜÍSTICA Y LITERATURA \n
+        TC-625 "LENGUAS Y TRADICIONES ORALES DE COSTA RICA"
+    </string>
+    <string name="nombre">Juego Para Contar </string>
+    <string name="datos_bribri">Datos lingüísticos y audios de la lengua bribri:</string>
+    <string name="ilustraciones">Ilustraciones:</string>
+    <string name="montaje">Montaje del juego:</string>
+    <string name="ilustracion_reverso">Ilustración del reverso:</string>
+    <string name="diseno">Diseño del juego e instrucciones:</string>
+    <string name="programadores">Programación de la aplicación: </string>
+    <string name="coordinacion">Coordinación del proyecto:</string>
+    <string name="contacto_T">Contacto:</string>
+    <string name="audios_T">Sonidos adicionales:</string>
+    <!--Nombres-->
+    <string name="datos_bribri_aut">Alí García Segura</string>
+    <string name="ilustraciones_aut">
+        Eduardo Vargas Montero \n
+        Francella Artavia Hernández \n
+        Joseph Rodríguez Masís \n
+        Marian Cerdas Chavarría \n
+        Kevin Mora Molina \n
+        Raquel Esquivel Jiménez
+
+    </string>
+    <string name="montaje_aut">Joseph Rodríguez Masís</string>
+    <string name="diseno_aut">
+        Carlos Sánchez Avendaño \n
+        Daniel Salazar Mora \n
+        Sebastián Vargas Soto
+    </string>
+    <string name="coordinacion_aut">Carlos Sánchez Avendaño
+    </string>
+    <string name="ilustracion_reverso_aut">Joseph Rodríguez Masís</string>
+    <string name="programadores_aut">
+        Daniel Salazar Mora \n
+        Sebastián Vargas Soto
+    </string>
+    <string name="contacto_N">dipalicori.efll@ucr.ac.cr</string>
+    <string name="audios_N">freesound.org \nUsuarios Gronkjaer y Bertrof</string>
+    <string name="info_ucr">
+        \n\nMaterial de distribución gratuita \n\nLa creación de este material fue posible gracias al financiamiento de la Vicerrectoría de Acción Social de la Universidad de Costa Rica
+    </string>
+
+</resources>

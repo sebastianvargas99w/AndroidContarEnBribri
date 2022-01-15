@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="ac.ucr.paracontar.JuegoActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/columna_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carta_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/primera_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:background="@drawable/estilo_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+
+            <!-- estilo custom -->
+            <!-- android:background="@drawable/estilo_cartas" -->
+
+            <ImageView
+                android:id="@+id/carta_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/segunda_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/columna_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carta_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/tercera_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+
+            <ImageView
+                android:id="@+id/carta_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/cuarta_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/columna_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carta_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/quinta_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+
+            <ImageView
+                android:id="@+id/carta_6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/sexta_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/columna_botones"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/controles_juego"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.125"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/boton_ayuda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/boton_ayuda"
+                    android:src="@drawable/icono_ayuda"/>
+
+                <ImageButton
+                    android:id="@+id/boton_volumen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/boton_volumen"
+                    android:src="@drawable/icono_volumen"/>
+
+                <ImageButton
+                    android:id="@+id/boton_cerrar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/boton_salir"
+                    android:src="@drawable/icono_cerrar"/>
+
+                <!--
+                <TextView
+                    android:id="@+id/textViewIntentoos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/tamano_texto"
+                    android:textStyle="bold"
+                    android:text="4/4" />
+                    -->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewIntentos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.120"
+                android:gravity="center"
+                android:text="@string/maximo_intentos"
+                android:textSize="@dimen/tamano_texto"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/carta_7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:contentDescription="@string/setima_carta_de_la_mano"
+                android:padding="@dimen/padding_cartas"
+                android:scaleType="fitXY"
+                android:src="@drawable/atras_carta"/>
+<!--
+            <TextView
+                android:id="@+id/textViewIntentos"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.23"
+                android:gravity="center"
+                android:text="@string/maximo_intentos"
+                android:textSize="@dimen/tamano_texto"
+                android:textStyle="bold" />
+                -->
+
+
+            <Button
+                android:id="@+id/boton_comer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/primary_amarillo"
+                android:text="@string/boton_comer"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

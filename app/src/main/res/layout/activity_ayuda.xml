@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Parte de las instrucciones del juego -->
+
+            <TableRow
+                android:id="@+id/tableRowHeaderInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/header_instrucciones"
+                        android:textColor="@color/orange_text"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/add_class_time_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/dropdown_arrow"
+                        app:tint="@color/orange" />
+
+                    <ImageView
+                        android:id="@+id/add_class_time_image_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/collapse_arrow"
+                        android:visibility="gone"
+                        app:tint="@color/orange" />
+                </RelativeLayout>
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/content_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/header_instr_general"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/header_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/content_instr_general"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/header_instr_ordenado"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/header_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/content_instr_ordenado"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/header_instr_desordenado"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/header_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/content_instr_desordenado"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+            </LinearLayout>
+
+            <!-- Parte de la ayuda -->
+
+            <TableRow
+                android:id="@+id/tableRowHeaderHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/header_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/header_ayuda"
+                        android:textColor="@color/orange_text"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/add_class_time_image_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/dropdown_arrow"
+                        app:tint="@color/orange" />
+
+                    <ImageView
+                        android:id="@+id/add_class_time_image_up_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/collapse_arrow"
+                        android:visibility="gone"
+                        app:tint="@color/orange" />
+                </RelativeLayout>
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/content_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/ayuda_intro_cartas"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- Seccion del icono de carta  -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/carta"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/prueba_2"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:id="@+id/carta_detalles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/carta_descripcion"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/content_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/ayuda_intro_iconos"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/content_size" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- Seccion del icono de ayuda -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/botonReproducirAudio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/icono_ayuda"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:id="@+id/help2_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/icono_ayuda"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/content_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- Seccion del icono de sonido -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/sonido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/icono_volumen"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:id="@+id/sonido_descripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/icono_sonido"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/content_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- Seccion del icono de cerrar -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/icono_salir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="false"
+                        android:background="@android:color/transparent"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/icono_cerrar"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:id="@+id/salir_descripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/icono_salir"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/content_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/darker_gray" />
+
+                <!-- Seccion del icono de comer -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/boton_comer"
+                        android:layout_width="80dp"
+                        android:layout_height="70dp"
+                        android:backgroundTint="@color/orange"
+                        android:text="@string/boton_comer"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/comer_descripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/icono_comer"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/content_size"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Imagenes para contar en bribri -->
+
+            <TableRow
+                android:id="@+id/tableRowHeaderImages"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/header_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/header_imagenes_bribri"
+                        android:textColor="@color/orange_text"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/flecha_arriba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/dropdown_arrow"
+                        app:tint="@color/orange" />
+
+                    <ImageView
+                        android:id="@+id/flecha_abajo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="29dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/collapse_arrow"
+                        android:visibility="gone"
+                        app:tint="@color/orange" />
+                </RelativeLayout>
+            </TableRow>
+
+        <LinearLayout
+            android:id="@+id/content_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/tabla_amubre" />
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/tabla_coroma" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

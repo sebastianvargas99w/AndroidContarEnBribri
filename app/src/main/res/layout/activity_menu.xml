@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="ac.ucr.paracontar.MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Logo del Juego Para Contar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo_menu">
+                </ImageView>
+            </LinearLayout>
+            <!-- fitXY Permite ajustar el ancho y alto independientemente -->
+
+            <!-- Opciones del juego -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Modo de juego 1: Jugar con mazo ordenado -->
+                <Button
+                    android:id="@+id/btn_modo_1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/primary_verde"
+                    android:text="@string/boton_modo_uno" />
+
+                <!-- Modo de juego 2: Jugar con mazo desordenado -->
+                <Button
+                    android:id="@+id/btn_modo_2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/primary_verde"
+                    android:text="@string/Boton_modo_dos" />
+
+                <!-- Instrucciones -->
+                <Button
+                    android:id="@+id/btn_instrucciones"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/primary_verde"
+                    android:text="@string/Boton_instrucciones" />
+
+                <TableRow
+                    android:id="@+id/tableRowHeaderInstructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <Button
+                        android:id="@+id/btn_creditos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/primary_verde"
+                        android:text="Ver créditos" />
+
+                    <Button
+                        android:id="@+id/btn_aclaracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/primary_verde"
+                        android:text="Ver aclaración" />
+
+                </TableRow>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
